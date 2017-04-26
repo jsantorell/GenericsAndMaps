@@ -22,10 +22,10 @@ public class MovieLab {
         Movie aGoodDayToDieHard = new Movie(7985, "A Good Day to Die Hard", "John McTiernan", "2013");
 
         Map<Integer, Movie> map = new HashMap<>();
-        map.put(7985, dieHard);
-        map.put(7986, dieHard2);
-        map.put(7987, dieHardWithVengence);
-        map.put(7985, aGoodDayToDieHard);
+        map.put(dieHard.getMovieID(), dieHard);
+        map.put(dieHard2.getMovieID(), dieHard2);
+        map.put(dieHardWithVengence.getMovieID(), dieHardWithVengence);
+        map.put(aGoodDayToDieHard.getMovieID(), aGoodDayToDieHard);
 
         Set<Integer> keys = map.keySet();
         for (Integer key : keys) {
@@ -40,10 +40,10 @@ public class MovieLab {
         
         
         Map<Integer, Movie> map2 = new TreeMap<>();
-        map2.put(7985, dieHard);
-        map2.put(7986, dieHard2);
-        map2.put(7987, dieHardWithVengence);
-        map2.put(7985, aGoodDayToDieHard);
+        map2.put(dieHard.getMovieID(), dieHard);
+        map2.put(dieHard2.getMovieID(), dieHard2);
+        map2.put(dieHardWithVengence.getMovieID(), dieHardWithVengence);
+        map2.put(aGoodDayToDieHard.getMovieID(), aGoodDayToDieHard);
         
         Set<Integer> keys2 = map2.keySet();
         for(Integer key : keys2) {

@@ -1,0 +1,23 @@
+Lab Activities (use the GenericsAndMaps sample project): 
+
+X1. Using the Movie class from the common package, create the necessary equals(), 
+   hashCode() and toString() methods. Then implement the Comparable interface to provide a default sort
+   order. Be careful … you need something unique for equals and that field must also be used for sorting. 
+ 
+X2. Next, create and initialize four Movie objects, but this time make sure at least two are duplicates
+  (based on equals). Now add them to a HashMap (does not sort, does not maintain entry order, does not
+   remove duplicate values). What key will you use? How will you retrieve individual items? Use put(key,
+   value) to add items; use get(key) to retrieve items. Demonstrate a solution. How will you loop through
+   the keys or values? Demonstrate this too.  
+ 
+X3. Store the same four Movie objects in a TreeMap. Demonstrate that sorting works, but only the keys are 
+   sorted. How can you sort the values? Retrieve a Collection of the values using the values() method of
+   your map. Now use the Collections.sort() method to sort those values by the default sort order. 
+ 
+X4. Now, using the same collection in #3 above, try creating and using a Comparator to produce an alternate
+   sort order for the Movie objects and sort by director. 
+ 
+5. Store the same four Movie objects in a TreeSet. Demonstrate that sorting works (default order)
+   AND that duplicates are removed by looping through the set and outputting the toString() value to
+   the console. 
+ 
